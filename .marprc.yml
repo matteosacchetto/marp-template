@@ -1,0 +1,5 @@
+allowLocalFiles: true     # Allows the use of local files (images, ...) in PDF and HTML
+html: true                # Allows the use of HTML tags within markdown
+theme: themes/slate.css   # Main theme to use
+inputDir: slides          # Slides directory
+output: public            # Output directory
