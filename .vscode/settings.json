@@ -1,0 +1,13 @@
+{
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+    },
+    "markdown.marp.themes": [
+        "./themes/slate.css"
+    ],
+    "markdown.marp.enableHtml": true
+}
