@@ -1,7 +1,7 @@
 /* @theme slate */
 
 @import "gaia";
-@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans&display=swap");
 
 :root {
   padding: 2.5em;
@@ -17,7 +17,7 @@ section {
   --color-highlight: #0284c7;
   --code-background: #1e293b;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
 
@@ -42,6 +42,10 @@ section.invert {
 .footnote > ul,
 .footnote > ol {
   padding: 0;
+}
+
+sup {
+  font-size: x-small;
 }
 
 a {
@@ -79,6 +83,11 @@ h6 {
   font-family: "Bitter", serif;
 }
 
+ul {
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+}
+
 p,
 li {
   font-size: 0.8em;
@@ -97,16 +106,26 @@ blockquote::before {
   content: none;
 }
 
-pre code.hljs {
+code {
+  background-color: var(--color-background-stripe);
+  color: var(--color-foreground);
+  padding: 0 0.2em;
+  margin: 0;
+  border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+  font-size: 1em;
+  letter-spacing: 1.25px;
+}
+
+pre > code.hljs {
   display: block;
   overflow-x: auto;
 }
 
-pre code {
-  padding: 25px;
+pre > code {
+  padding: 20px 25px;
 }
 
-code {
+pre > code {
   color: #abb2bf;
   background: var(--code-background) !important;
   border-radius: 0.5em;
